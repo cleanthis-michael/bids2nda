@@ -12,10 +12,13 @@ from glob import glob
 import os
 import sys
 
+import pkg_resources
+pkg_resources.require("numpy==`1.17")  # modified to use specific numpy
+import numpy as np
+
 import nibabel as nb
 import json
 import pandas as pd
-import numpy as np
 
 
 # Gather our code in a main() function
